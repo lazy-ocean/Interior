@@ -1,0 +1,107 @@
+.header {
+    height: 100vh;
+    width: auto;
+    background-image: url(../../img/slider-img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    //flex-wrap: wrap;
+
+    &__logo {
+        width: 18.6rem;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 9.7rem;
+        margin-right: 16.7rem;
+        padding-top: 6.2rem;
+    }
+
+    &__menu {
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-transform: uppercase;
+        font-family: Montserrat Light, sans-serif;
+        transition: all .2s;
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: $color-primary;
+        }
+
+        &--active {
+            border-bottom: 0.3rem solid #000;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+        }
+
+        &:hover:not(:last-child) {
+            border-bottom: 0.3rem solid #000;
+            font-family: Montserrat, sans-serif;
+            //font-weight: 700;
+        }
+
+        &:active {
+            font-weight: 700;
+        }
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__content {
+        margin-left: 9.7rem;
+        width: 40%;
+    }
+
+    &__text {
+        font-family: Montserrat Light, AdobeInvisFont, MyriadPro Regular;
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        width: 80%;
+        margin-bottom: 3.1rem;
+    }
+}
+
+.pagination {
+    align-self: center;
+    margin-bottom: 1.9rem;
+
+    display: flex;
+    align-items: center;
+
+    &__circle {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-color: $color-grey-light;
+        border-radius: 20px;
+        margin: 5px;
+
+        &--active {
+            width: 40px;
+            height: 40px;
+            background-color: $color-primary;
+        }
+
+        &:hover {
+            background-color: $color-grey;
+        }
+
+        &:active {
+            transform: translateY(0.1rem);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    //this is 1rem. 1rem we want as 10px == 10px/16px(default)=62.5%
+    //order is very important! larger to smaller when desktop first
+    font-size: 62.5%;
+    font-family: Montserrat, AdobeInvisFont, MyriadPro-Regular;
+}
+
+body {
+    box-sizing: border-box;
+    /* with this, padding is included in the width, eg total width is not l.padding + width + r.padding, just width with paddings inside */
+}
+
+::selection {
+    //selecting text, the color will be green instead of default blue
+    background-color: green;
+    color: #fff;
+}
