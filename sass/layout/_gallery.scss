@@ -1,0 +1,25 @@
+.gallery {
+    padding: 12rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+
+    &__card {
+        background-image: url(../img/exclusive-product1.png);
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    &__item {
+        &:hover {
+            box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.exclusive {
+    display: flex;
+
+    &__content {
+        margin-left: 5.2rem;
+    }
+
+    &__card {
+        height: 68.3rem;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &--1 {
+            background-image: url(../img/product-card1.png);
+        }
+
+        &--2 {
+            background-image: url(../img/product-card2.png);
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-top: 2.4rem;
+        margin-bottom: 5.1rem;
+        width: 80%;
+    }
+}

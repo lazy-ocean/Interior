@@ -6,9 +6,28 @@
     
 }
 
-.heading-trending {
+.heading-categories {
     text-transform: uppercase;
-    color: $color-green;
     font-size: 1.8rem;
     line-height: 4.8rem;
+
+    &--green {
+        color: $color-green;
+    }
+
+    &--blue {
+        color: $color-blue;
+    }
+
+    &--red {
+        color: $color-red;
+    }
+
+    &--grey {
+        color: $color-grey-dark;
+    }
+}
+
+.heading-tertiary {
+    font-size: 3.6rem;
 }

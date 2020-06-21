@@ -1,7 +1,7 @@
 .btn {
     outline: none;
-    display: block;
     background-color: #fff;
+    color: $color-primary;
     border-radius: 40px;
     border: none;
     padding: 1.7rem 3.2rem;
@@ -14,6 +14,8 @@
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     cursor: pointer;
     transition: all .2s;
+    text-decoration: none;
+    display: inline-block;
 
     &:hover {
         box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.5);
@@ -22,5 +24,39 @@
     &:active {
         transform: translateY(0.3rem);
         box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.2);
+    }
+}
+
+.btn--circle {
+    border-radius: 50%;
+    width: 4.9rem;
+    height: 4.9rem;
+    line-height: 48px;
+    text-align: center;
+    outline: none;
+    display: block;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+
+    img {
+        height: 1.5rem;
+        transform: translateY(20%);
+    }
+}
+
+
+.explore {
+    text-transform: uppercase;
+    letter-spacing: 0.36rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-primary;
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 1px solid #000;
     }
 }

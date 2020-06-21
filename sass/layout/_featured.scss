@@ -1,0 +1,102 @@
+.featured {
+    padding: 12rem 9.7rem;
+    
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+    }
+
+    &__slider {
+        display: flex;
+        border-bottom: 1px #000 solid;
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 2rem 1.5em;
+        
+
+        &--active {
+            border-bottom: 0.3rem solid #000;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700;
+        }
+
+        &:hover {
+            border-bottom: 0.3rem solid #000;
+            font-family: Montserrat, sans-serif;
+            font-weight: 700; 
+        }
+    }
+
+    &__link {
+       color: $color-grey;
+       text-decoration: none;
+       font-size: 3.6rem;
+       font-weight: 700;
+
+       &--active {
+        color: #000;
+       }
+
+       &:hover {
+        color: #000;
+       }
+    }
+    
+    &__products {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__product {
+        position: relative;
+        margin-bottom: 1rem;
+
+        &:hover {
+            & > .featured__hover {
+                visibility: visible;
+            }
+        }
+    }
+
+    &__img {
+        width: 27rem;
+        height: 27rem;
+    }
+
+    &__hover {
+        position: absolute;
+        background-color: rgba(#fff, 0.9);
+        display: flex;
+        z-index: 100;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $color-grey;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-top: 1.9rem;
+        margin-bottom: 1.4rem;
+    }
+
+    &__content {
+        text-align: center;
+        width: 80%;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}

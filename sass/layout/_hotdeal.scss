@@ -1,0 +1,24 @@
+.hotdeal {
+    background-image: url(../img/slider2.jpg);
+    height: 80rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        margin-left: 9.7rem;
+        flex: 1;
+        margin-top: 28.7rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-top: 2.4rem;
+        margin-bottom: 5.1rem;
+        width: 80%;
+    }
+
+    &>.pagination {
+        flex: 0;
+    }
+}

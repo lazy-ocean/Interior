@@ -1,0 +1,19 @@
+.mobile {
+    background-image: url(../img/mobile-app.png);
+    height: 51.6rem;
+    display: flex;
+    align-items: center;
+
+
+    &__content {
+        margin-left: 9.7rem;
+        width: 45%;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        margin-top: 2.4rem;
+        margin-bottom: 5.1rem;
+        width: 80%;
+    }
+}

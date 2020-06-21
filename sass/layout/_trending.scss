@@ -1,0 +1,20 @@
+.trending {
+    padding: 12rem 9.7rem;
+    
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        padding-top: 6.4rem;
+    }
+
+    &__product {
+        margin-bottom: 3rem;
+        transition: all .2s;
+
+        &:hover {
+            box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+        }
+    }
+}
