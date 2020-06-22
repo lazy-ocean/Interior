@@ -43,6 +43,11 @@ body {
 .heading-tertiary {
   font-size: 3.6rem; }
 
+.heading-secondary {
+  font-size: 2.2rem;
+  color: #212121;
+  text-transform: uppercase; }
+
 .btn {
   outline: none;
   background-color: #fff;
@@ -396,7 +401,8 @@ footer {
     background: url(../img/plane-icon.png) no-repeat;
     background-position: 97% 50%;
     color: #6c6c6c;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    background-color: #fff; }
     footer .footer__input:focus {
       outline: 1px solid #6c6c6c; }
   footer .footer__text {
@@ -412,3 +418,48 @@ footer {
     color: #6c6c6c; }
   footer .footer__link:hover {
     border-bottom: 1px solid #6c6c6c; }
+
+.contact {
+  width: 85%;
+  margin: 7rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem; }
+  .contact__card {
+    border: 1px solid #212121;
+    text-align: center;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 37rem;
+    font-size: 1.4rem;
+    line-height: 2rem; }
+    .contact__card--1:hover {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../img/losangeles.jpg);
+      background-size: cover; }
+    .contact__card--2:hover {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../img/boston.jpg);
+      background-size: cover; }
+    .contact__card--3:hover {
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(../img/chicago.jpg);
+      background-size: cover; }
+  .contact__location {
+    height: 3.8rem;
+    width: auto;
+    align-self: center; }
+  .contact__info {
+    color: #6c6c6c;
+    font-weight: 700; }
+  .contact__content {
+    font-weight: 700;
+    color: #212121; }
+    .contact__content a {
+      text-decoration: none;
+      color: #212121; }
+      .contact__content a:hover {
+        border-bottom: 1px solid #c7c7c7; }
+  .contact__address a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 700; }

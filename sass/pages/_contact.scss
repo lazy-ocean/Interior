@@ -1,0 +1,73 @@
+.contact {
+    width: 85%;
+    margin: 7rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+
+    &__card {
+        border: 1px solid $color-primary;
+        text-align: center;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 37rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+        &--1 {
+            &:hover {
+                background-image: linear-gradient(to right bottom, rgba(#fff, 0.85), rgba(#fff, 0.85)), url(../img/losangeles.jpg);
+                background-size: cover;
+            }
+        }
+
+        &--2 {
+            &:hover {
+                background-image: linear-gradient(to right bottom, rgba(#fff, 0.85), rgba(#fff, 0.85)), url(../img/boston.jpg);
+                background-size: cover;
+            }
+        }
+
+        &--3 {
+            &:hover {
+                background-image: linear-gradient(to right bottom, rgba(#fff, 0.85), rgba(#fff, 0.85)), url(../img/chicago.jpg);
+                background-size: cover;
+            }
+        }
+    }
+
+    &__location {
+        height: 3.8rem;
+        width: auto;
+        align-self: center;
+    }
+
+    &__info {
+        color: $color-grey-dark;
+        font-weight: 700;
+    }
+
+    &__content {
+        font-weight: 700;
+        color: $color-primary;
+
+        a {
+            text-decoration: none;
+            color: $color-primary;
+
+            &:hover {
+                border-bottom: 1px solid $color-grey-light;
+            }
+        }
+    }
+
+    &__address {
+        a {
+            text-decoration: none;
+            color: $color-primary;
+            font-weight: 700;
+        }
+    }
+}
