@@ -1,16 +1,23 @@
 .trending {
-    padding: 12rem 9.7rem;
-    
+    width: 85%;
+    margin: 12rem auto;
+
     &__products {
-        display: flex;
+        /*display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-content: space-between;
+        align-content: space-between;*/
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+        gap: 3rem;
         padding-top: 6.4rem;
     }
 
     &__product {
-        margin-bottom: 3rem;
+        //margin-bottom: 3rem;
+        display: block;
+        width: 100%;
+        height: auto;
         transition: all .2s;
 
         &:hover {

@@ -164,7 +164,8 @@ body {
       transform: translateY(0.1rem); }
 
 .featured {
-  padding: 12rem 9.7rem; }
+  width: 85%;
+  margin: 12rem auto; }
   .featured__nav {
     display: flex;
     justify-content: space-between;
@@ -239,7 +240,8 @@ body {
     width: 50%;
     display: flex;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    background-position: right; }
     .exclusive__card--1 {
       background-image: url(../img/product-card1.png); }
     .exclusive__card--2 {
@@ -251,15 +253,21 @@ body {
     width: 80%; }
 
 .trending {
-  padding: 12rem 9.7rem; }
+  width: 85%;
+  margin: 12rem auto; }
   .trending__products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
+    /*display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 3rem;
     padding-top: 6.4rem; }
   .trending__product {
-    margin-bottom: 3rem;
+    display: block;
+    width: 100%;
+    height: auto;
     transition: all .2s; }
     .trending__product:hover {
       box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35); }
@@ -282,21 +290,27 @@ body {
     flex: 0; }
 
 .gallery {
-  padding: 12rem;
+  width: 85%;
+  margin: 12rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem; }
   .gallery__card {
     background-image: url(../img/exclusive-product1.png);
+    background-position: top;
     display: flex;
     align-items: center; }
   .gallery__items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    grid-template-rows: repeat(2, minmax(10rem, 1fr));
     gap: 3rem; }
-  .gallery__item:hover {
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35); }
+  .gallery__item {
+    display: block;
+    width: 100%;
+    height: auto; }
+    .gallery__item:hover {
+      box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35); }
 
 .mobile {
   background-image: url(../img/mobile-app.png);

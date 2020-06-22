@@ -1,6 +1,7 @@
 .featured {
-    padding: 12rem 9.7rem;
-    
+    width: 85%;
+    margin: 12rem auto;
+
 
     &__nav {
         display: flex;
@@ -17,7 +18,7 @@
     &__item {
         list-style-type: none;
         padding: 2rem 1.5em;
-        
+
 
         &--active {
             border-bottom: 0.3rem solid #000;
@@ -28,25 +29,25 @@
         &:hover {
             border-bottom: 0.3rem solid #000;
             font-family: Montserrat, sans-serif;
-            font-weight: 700; 
+            font-weight: 700;
         }
     }
 
     &__link {
-       color: $color-grey;
-       text-decoration: none;
-       font-size: 3.6rem;
-       font-weight: 700;
+        color: $color-grey;
+        text-decoration: none;
+        font-size: 3.6rem;
+        font-weight: 700;
 
-       &--active {
-        color: #000;
-       }
+        &--active {
+            color: #000;
+        }
 
-       &:hover {
-        color: #000;
-       }
+        &:hover {
+            color: #000;
+        }
     }
-    
+
     &__products {
         padding-top: 5rem;
         display: flex;
@@ -59,7 +60,7 @@
         margin-bottom: 1rem;
 
         &:hover {
-            & > .featured__hover {
+            &>.featured__hover {
                 visibility: visible;
             }
         }
