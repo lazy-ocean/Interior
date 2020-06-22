@@ -3,8 +3,13 @@
     font-family: Montserrat Thin, sans-serif;
     text-transform: uppercase;
     font-weight: 100;
-    
+
+    &--products {
+        text-transform: none;
+    }
 }
+
+
 
 .heading-categories {
     text-transform: uppercase;

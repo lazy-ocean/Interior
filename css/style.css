@@ -12,11 +12,11 @@ html {
 body {
   box-sizing: border-box;
   /* with this, padding is included in the width, eg total width is not l.padding + width + r.padding, just width with paddings inside */
-  max-width: 1366px;
+  max-width: 1466px;
   margin: 0 auto; }
 
 ::selection {
-  background-color: green;
+  background-color: #8c8c8c;
   color: #fff; }
 
 .heading-main {
@@ -24,6 +24,8 @@ body {
   font-family: Montserrat Thin, sans-serif;
   text-transform: uppercase;
   font-weight: 100; }
+  .heading-main--products {
+    text-transform: none; }
 
 .heading-categories {
   text-transform: uppercase;
@@ -91,6 +93,14 @@ body {
   .explore:hover {
     border-bottom: 1px solid #000; }
 
+.upload {
+  margin: 7rem auto 14rem auto;
+  text-align: center;
+  display: block;
+  transition: all .2s; }
+  .upload__icon:hover {
+    transform: scale(1.05); }
+
 .header {
   min-height: 100vh;
   width: auto;
@@ -99,15 +109,17 @@ body {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 6.2rem 9.7rem 2rem 9.7rem; }
+  .header--products {
+    background-image: none;
+    background-color: #F7F7F7;
+    min-height: 36rem; }
   .header__logo {
     width: 18.6rem; }
   .header__nav {
     display: flex;
-    justify-content: space-between;
-    margin-left: 9.7rem;
-    margin-right: 16.7rem;
-    padding-top: 6.2rem; }
+    justify-content: space-between; }
   .header__menu {
     list-style-type: none; }
   .header__item {
@@ -116,25 +128,31 @@ body {
     padding-right: 1.5rem;
     text-transform: uppercase;
     font-family: Montserrat Light, sans-serif;
-    transition: all .2s; }
+    transition: all .2s;
+    letter-spacing: 1.4px; }
     .header__item a,
     .header__item a:visited {
       text-decoration: none;
+      color: #8c8c8c; }
+    .header__item a:hover {
+      font-family: Montserrat, sans-serif;
       color: #212121; }
     .header__item--active {
       border-bottom: 0.3rem solid #000;
       font-family: Montserrat, sans-serif;
       font-weight: 700; }
-    .header__item:hover:not(:last-child) {
-      border-bottom: 0.3rem solid #000;
-      font-family: Montserrat, sans-serif; }
+      .header__item--active a,
+      .header__item--active a:visited {
+        text-decoration: none;
+        color: #212121; }
     .header__item:active {
       font-weight: 700; }
   .header__menu {
     display: flex; }
   .header__content {
-    margin-left: 9.7rem;
     width: 40%; }
+    .header__content--products {
+      width: auto; }
   .header__text {
     font-family: Montserrat Light, AdobeInvisFont, MyriadPro Regular;
     font-size: 1.4rem;
@@ -144,7 +162,6 @@ body {
 
 .pagination {
   align-self: center;
-  margin-bottom: 1.9rem;
   display: flex;
   align-items: center; }
   .pagination__circle {
@@ -166,6 +183,8 @@ body {
 .featured {
   width: 85%;
   margin: 12rem auto; }
+  .featured--products {
+    margin: 7rem auto; }
   .featured__nav {
     display: flex;
     justify-content: space-between;
@@ -176,6 +195,8 @@ body {
   .featured__item {
     list-style-type: none;
     padding: 2rem 1.5em; }
+    .featured__item--products {
+      padding: 1.9rem 1.5rem; }
     .featured__item--active {
       border-bottom: 0.3rem solid #000;
       font-family: Montserrat, sans-serif;
@@ -193,6 +214,9 @@ body {
       color: #000; }
     .featured__link:hover {
       color: #000; }
+    .featured__link--products {
+      font-size: 1.9rem;
+      text-transform: uppercase; }
   .featured__products {
     padding-top: 5rem;
     display: flex;
@@ -241,7 +265,8 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-position: right; }
+    background-size: cover;
+    background-repeat: no-repeat; }
     .exclusive__card--1 {
       background-image: url(../img/product-card1.png); }
     .exclusive__card--2 {
@@ -274,6 +299,7 @@ body {
 
 .hotdeal {
   background-image: url(../img/slider2.jpg);
+  background-size: cover;
   height: 80rem;
   display: flex;
   flex-direction: column; }
@@ -287,7 +313,8 @@ body {
     margin-bottom: 5.1rem;
     width: 80%; }
   .hotdeal > .pagination {
-    flex: 0; }
+    flex: 0;
+    margin-bottom: 3rem; }
 
 .gallery {
   width: 85%;
@@ -297,7 +324,7 @@ body {
   column-gap: 3rem; }
   .gallery__card {
     background-image: url(../img/exclusive-product1.png);
-    background-position: top;
+    background-size: cover;
     display: flex;
     align-items: center; }
   .gallery__items {
@@ -314,6 +341,7 @@ body {
 
 .mobile {
   background-image: url(../img/mobile-app.png);
+  background-size: cover;
   height: 51.6rem;
   display: flex;
   align-items: center; }
@@ -330,7 +358,7 @@ footer {
   background-color: #F7F7F7;
   display: flex;
   flex-direction: column;
-  padding: 12rem 9.7rem; }
+  padding: 9rem 9.7rem 3rem 9.7rem; }
   footer .footer__upper {
     display: flex;
     justify-content: space-between;
@@ -365,7 +393,7 @@ footer {
     border: 1px solid #c7c7c7;
     padding: 1.5rem;
     margin-right: -3.5rem;
-    background: url(../../img/plane-icon.png) no-repeat;
+    background: url(../img/plane-icon.png) no-repeat;
     background-position: 97% 50%;
     color: #6c6c6c;
     font-size: 1.2rem; }

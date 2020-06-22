@@ -1,5 +1,6 @@
 .hotdeal {
     background-image: url(../img/slider2.jpg);
+    background-size: cover;
     height: 80rem;
 
     display: flex;
@@ -20,5 +21,6 @@
 
     &>.pagination {
         flex: 0;
+        margin-bottom: 3rem;
     }
 }

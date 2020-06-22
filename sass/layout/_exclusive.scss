@@ -11,7 +11,8 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         &--1 {
             background-image: url(../img/product-card1.png);

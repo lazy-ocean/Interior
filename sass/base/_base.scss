@@ -16,14 +16,12 @@ html {
 body {
     box-sizing: border-box;
     /* with this, padding is included in the width, eg total width is not l.padding + width + r.padding, just width with paddings inside */
-    //padding-left: 4rem;
-    //padding-right: 4rem;
-    max-width: 1366px;
+    max-width: 1466px;
     margin: 0 auto;
 }
 
 ::selection {
     //selecting text, the color will be green instead of default blue
-    background-color: green;
+    background-color: $color-grey;
     color: #fff;
 }
