@@ -30,9 +30,15 @@ footer {
             font-weight: 700;
             color: $color-primary;
             text-transform: uppercase;
+            display: inline-block;
+            transition: all 0.2s;
 
             &:hover {
-                border-bottom: 1px solid $color-grey-dark;
+                transform: translate(-1px);
+            }
+
+            &:active {
+                transform: translate(0px);
             }
         }
     }

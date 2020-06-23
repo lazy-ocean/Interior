@@ -70,6 +70,11 @@ body {
   .btn:active {
     transform: translateY(0.3rem);
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.2); }
+  .btn--orange {
+    color: #fff;
+    background-color: #F44336;
+    width: 100%;
+    text-align: center; }
 
 .btn--circle {
   border-radius: 50%;
@@ -94,17 +99,22 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #212121;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all .2s; }
   .explore:hover {
-    border-bottom: 1px solid #000; }
+    transform: translate(-3px); }
+  .explore:active {
+    transform: translate(0px); }
 
 .upload {
   margin: 7rem auto 14rem auto;
   text-align: center;
   display: block;
-  transition: all .2s; }
+  transition: all .5s; }
   .upload__icon:hover {
     transform: scale(1.05); }
+  .upload__icon:active {
+    transform: rotateX(180deg); }
 
 .header {
   min-height: 100vh;
@@ -120,6 +130,10 @@ body {
     background-image: none;
     background-color: #F7F7F7;
     min-height: 36rem; }
+  .header--details {
+    background-image: none;
+    background-color: #fff;
+    min-height: 12rem; }
   .header__logo {
     width: 18.6rem; }
   .header__nav {
@@ -134,14 +148,20 @@ body {
     text-transform: uppercase;
     font-family: Montserrat Light, sans-serif;
     transition: all .2s;
-    letter-spacing: 1.4px; }
+    letter-spacing: 1.4px;
+    display: inline-block; }
     .header__item a,
     .header__item a:visited {
       text-decoration: none;
-      color: #8c8c8c; }
+      color: #8c8c8c;
+      display: inline-block;
+      transition: all .2s; }
     .header__item a:hover {
       font-family: Montserrat, sans-serif;
-      color: #212121; }
+      color: #212121;
+      transform: translate(-2px); }
+    .header__item a:active {
+      transform: translate(0px); }
     .header__item--active {
       border-bottom: 0.3rem solid #000;
       font-family: Montserrat, sans-serif;
@@ -150,8 +170,6 @@ body {
       .header__item--active a:visited {
         text-decoration: none;
         color: #212121; }
-    .header__item:active {
-      font-weight: 700; }
   .header__menu {
     display: flex; }
   .header__content {
@@ -382,9 +400,13 @@ footer {
       text-decoration: none;
       font-weight: 700;
       color: #212121;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s; }
       footer .footer__infoitem a:hover {
-        border-bottom: 1px solid #6c6c6c; }
+        transform: translate(-1px); }
+      footer .footer__infoitem a:active {
+        transform: translate(0px); }
   footer .footer__contact {
     width: 20%; }
     footer .footer__contact--text {
@@ -463,3 +485,60 @@ footer {
     text-decoration: none;
     color: #212121;
     font-weight: 700; }
+
+.details {
+  width: 100%;
+  background-color: #F7F7F7; }
+  .details__slider {
+    display: flex;
+    justify-content: center; }
+  .details__item {
+    list-style-type: none;
+    padding: 1.9rem 2rem; }
+  .details__link {
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .2s;
+    display: inline-block; }
+    .details__link--active {
+      color: #212121; }
+    .details__link:hover {
+      color: #212121;
+      transform: translate(-2px); }
+    .details__link:active {
+      transform: translate(0px); }
+
+.product {
+  display: flex;
+  width: 80%;
+  margin: 7rem auto; }
+  .product__photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3rem; }
+  .product__sphoto {
+    transition: all .2s; }
+  .product__sphoto:hover {
+    transform: translate(-2px);
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.2); }
+  .product__sphoto:active {
+    transform: translate(0px); }
+  .product__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .product__price {
+    font-size: 4.8rem;
+    font-weight: 300;
+    padding-bottom: 3rem; }
+    .product__price span {
+      font-size: 7.2rem; }
+  .product__description {
+    font-size: 1.6rem;
+    line-height: 24px;
+    padding-top: 5rem; }

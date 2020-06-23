@@ -17,6 +17,12 @@
         min-height: 36rem;
     }
 
+    &--details {
+        background-image: none;
+        background-color: #fff;
+        min-height: 12rem;
+    }
+
     &__logo {
         width: 18.6rem;
     }
@@ -41,16 +47,24 @@
         font-family: Montserrat Light, sans-serif;
         transition: all .2s;
         letter-spacing: 1.4px;
+        display: inline-block;
 
         a,
         a:visited {
             text-decoration: none;
             color: $color-grey;
+            display: inline-block;
+            transition: all .2s;
         }
 
         a:hover {
             font-family: Montserrat, sans-serif;
             color: $color-primary;
+            transform: translate(-2px);
+        }
+
+        a:active {
+            transform: translate(0px);
         }
 
         &--active {
@@ -65,9 +79,7 @@
             }
         }
 
-        &:active {
-            font-weight: 700;
-        }
+
     }
 
     &__menu {

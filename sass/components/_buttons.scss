@@ -25,6 +25,13 @@
         transform: translateY(0.3rem);
         box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.2);
     }
+
+    &--orange {
+        color: #fff;
+        background-color: $color-orange;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .btn--circle {
@@ -55,9 +62,14 @@
     text-decoration: none;
     color: $color-primary;
     cursor: pointer;
+    transition: all .2s;
 
     &:hover {
-        border-bottom: 1px solid #000;
+        transform: translate(-3px);
+    }
+
+    &:active {
+        transform: translate(0px);
     }
 }
 
@@ -65,10 +77,14 @@
     margin: 7rem auto 14rem auto;
     text-align: center;
     display: block;
-    transition: all .2s;
+    transition: all .5s;
 
     &__icon:hover {
         transform: scale(1.05);
+    }
+
+    &__icon:active {
+        transform: rotateX(180deg);
     }
 
 }
