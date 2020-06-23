@@ -71,6 +71,38 @@
     &:active {
         transform: translate(0px);
     }
+
+    @media only screen and (max-width: $bp-small) {
+        display: none;
+    }
+}
+
+.explore-btn {
+    text-transform: uppercase;
+    letter-spacing: 0.36rem;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $color-primary;
+    cursor: pointer;
+    transition: all .2s;
+    display: none;
+    padding-top: 2rem;
+    text-align: right;
+
+    &:hover {
+        transform: translate(-3px);
+    }
+
+    &:active {
+        transform: translate(0px);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        display: block;
+    }
+
 }
 
 .upload {

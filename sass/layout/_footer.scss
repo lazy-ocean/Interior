@@ -2,23 +2,54 @@ footer {
     background-color: $color-footer;
     display: flex;
     flex-direction: column;
-    padding: 9rem 9.7rem 3rem 9.7rem;
+    padding: 7rem $left-margin 3rem $left-margin;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5rem $left-margin 3rem $left-margin;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem $left-margin-small 3rem $left-margin-small;
+    }
 
     .footer__upper {
         display: flex;
         justify-content: space-between;
         padding-bottom: 6.7rem;
+        flex-wrap: wrap;
+
+        &>* {
+            padding-top: 2rem;
+            padding-left: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+            justify-content: flex-start;
+            padding-bottom: 3rem;
+        }
     }
 
     .footer__lower {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+
+        &>* {
+            padding-top: 2rem;
+            padding-left: 2rem;
+        }
+    }
+
+    .footer__information {
+        @media only screen and (max-width: $bp-medium) {
+            min-width: 50%;
+        }
     }
 
     .footer__infomenu {
         list-style-type: none;
         column-count: 2;
-        flex: 1;
     }
 
     .footer__infoitem {
@@ -49,10 +80,20 @@ footer {
         &--text {
             font-size: 1.4rem;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 45%;
+        }
     }
 
     .footer__subscribe {
         width: 30%;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 100%;
+            margin-top: 2rem;
+        }
     }
 
     .footer__input {
@@ -70,6 +111,12 @@ footer {
 
         &:focus {
             outline: 1px solid $color-grey-dark;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 50%;
+            background: none;
+            background-color: #fff;
         }
     }
 

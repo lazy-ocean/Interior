@@ -1,6 +1,11 @@
 .featured {
     width: 85%;
-    margin: 12rem auto;
+    margin: $base-margin;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: $smaller-margin;
+    }
+
 
     &--products {
         margin: 7rem auto;
@@ -66,6 +71,10 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: space-around;
+        }
     }
 
     &__product {
@@ -82,6 +91,16 @@
     &__img {
         width: 27rem;
         height: 27rem;
+
+        @media only screen and (max-width: $bp-large) {
+            width: 20rem;
+            height: auto;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 40rem;
+            height: auto;
+        }
     }
 
     &__hover {

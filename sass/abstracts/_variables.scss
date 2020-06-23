@@ -7,3 +7,28 @@ $color-grey: #8c8c8c;
 $color-grey-dark: #6c6c6c;
 $color-footer: #F7F7F7;
 $color-orange: #F44336;
+
+
+$base-margin: 12rem auto;
+$smaller-margin: 7rem auto;
+$left-margin: 9.7rem;
+$left-margin-small: 5rem;
+
+/*$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px
+
+
+@media only screen and (max-width: $bp-largest) {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+*/
+//BREAKPOINTS FOR MEDIAQUERIES
+$bp-largest: 75em; //1200px
+$bp-large: 65.625em; //1050px
+$bp-medium: 53.125em; //850px
+$bp-small: 34.375em; //550px

@@ -1,6 +1,11 @@
 .exclusive {
     display: flex;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: inline-block;
+        width: 100%;
+    }
+
     &__content {
         margin-left: 5.2rem;
     }
@@ -13,6 +18,13 @@
         flex-direction: column;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: right;
+
+        @media only screen and (max-width: $bp-medium) {
+            height: 40rem;
+            width: 100%;
+            background-position: center;
+        }
 
         &--1 {
             background-image: url(../img/product-card1.png);
@@ -20,13 +32,18 @@
 
         &--2 {
             background-image: url(../img/product-card2.png);
+
+            @media only screen and (max-width: $bp-medium) {
+                display: none;
+            }
         }
+
     }
 
     &__text {
         font-size: 1.4rem;
         margin-top: 2.4rem;
         margin-bottom: 5.1rem;
-        width: 80%;
+        width: 50%;
     }
 }

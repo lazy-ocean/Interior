@@ -11,6 +11,14 @@ html {
     //order is very important! larger to smaller when desktop first
     font-size: 62.5%;
     font-family: Montserrat, AdobeInvisFont, MyriadPro-Regular;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 45%;
+    }
 }
 
 body {

@@ -1,6 +1,10 @@
 .trending {
     width: 85%;
-    margin: 12rem auto;
+    margin: $base-margin;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: $smaller-margin;
+    }
 
     &__products {
         /*display: flex;
@@ -11,6 +15,16 @@
         grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
         gap: 3rem;
         padding-top: 6.4rem;
+
+        @media only screen and (max-width: $bp-large) {
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            a:nth-of-type(even) {
+                display: none;
+            }
+        }
     }
 
     &__product {

@@ -1,14 +1,39 @@
 .mobile {
     background-image: url(../img/mobile-app.png);
     background-size: cover;
+    background-position: bottom;
     height: 51.6rem;
     display: flex;
     align-items: center;
 
+    @media only screen and (max-width: $bp-medium) {
+        height: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        background-image: none;
+        background-color: #f9f4f1;
+    }
+
 
     &__content {
-        margin-left: 9.7rem;
+        margin-left: $left-margin;
         width: 45%;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-left: $left-margin-small;
+            width: 100%;
+        }
+
+        & img {
+            width: 100px;
+            height: auto;
+        }
     }
 
     &__text {
