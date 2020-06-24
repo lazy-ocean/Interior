@@ -161,6 +161,9 @@ body {
     transform: scale(1.05); }
   .upload__icon:active {
     transform: rotateX(180deg); }
+  @media only screen and (max-width: 53.125em) {
+    .upload {
+      margin: 7rem auto 7rem auto; } }
 
 .header {
   min-height: 100vh;
@@ -284,7 +287,8 @@ body {
   .featured__nav {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    overflow: auto; }
   .featured__slider {
     display: flex;
     border-bottom: 1px #000 solid; }
@@ -666,7 +670,8 @@ footer {
 
 .details {
   width: 100%;
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  overflow: scroll; }
   .details__slider {
     display: flex;
     justify-content: center; }
@@ -693,11 +698,33 @@ footer {
   display: flex;
   width: 80%;
   margin: 7rem auto; }
+  @media only screen and (max-width: 46.875em) {
+    .product {
+      flex-wrap: wrap; } }
   .product__photos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    min-width: 50%; }
+    @media only screen and (max-width: 46.875em) {
+      .product__photos {
+        flex-direction: row;
+        width: 100%;
+        margin-right: 0; } }
+  .product__bphoto {
+    width: 80%;
+    display: block; }
+    @media only screen and (max-width: 46.875em) {
+      .product__bphoto {
+        flex: 1; } }
+  .product__sphotos {
+    display: block; }
+    @media only screen and (max-width: 46.875em) {
+      .product__sphotos {
+        display: flex;
+        flex-direction: column;
+        flex: 0; } }
   .product__sphoto {
     transition: all .2s; }
   .product__sphoto:hover {
@@ -709,7 +736,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    width: 50%; }
+    @media only screen and (max-width: 46.875em) {
+      .product__content {
+        width: 100%; } }
   .product__price {
     font-size: 4.8rem;
     font-weight: 300;
