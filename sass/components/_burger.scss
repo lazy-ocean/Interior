@@ -40,6 +40,10 @@
         top: 1rem;
     }
 
+    &__input {
+        cursor: pointer;
+    }
+
     &__input:checked~.burger::before {
         top: 0;
         transform: rotate(135deg);
@@ -86,6 +90,7 @@
         display: block;
         position: relative;
         transition: all .2s;
+        cursor: pointer;
 
         &:first-child {
             margin-top: 2rem;
@@ -121,6 +126,7 @@
             text-decoration: none;
             z-index: 100;
             position: relative;
+            display: block;
         }
     }
 
