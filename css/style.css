@@ -222,7 +222,6 @@ body {
         width: 30rem; } }
   .burger__item {
     text-decoration: none;
-    padding: 2.5rem 6rem 2.5rem 3rem;
     font-size: 2.5rem;
     text-align: right;
     display: block;
@@ -252,7 +251,8 @@ body {
       text-decoration: none;
       z-index: 100;
       position: relative;
-      display: block; }
+      display: block;
+      padding: 2.5rem 6rem 2.5rem 3rem; }
   .burger__input {
     display: block;
     margin-top: -1.2rem;
