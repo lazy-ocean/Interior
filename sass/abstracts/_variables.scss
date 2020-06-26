@@ -33,3 +33,35 @@ $bp-large: 65.625em; //1050px
 $bp-medium: 53.125em; //850px
 $bp-prodpg: 46.875em; //750px
 $bp-small: 34.375em; //550px
+
+
+//animations for burger 
+@keyframes slideInRight {
+    0% {
+        transform: translate(100%, 0);
+        transition: all .5s cubic-bezier(.23, .68, .54, .92);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0%);
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(100%, 0);
+        transition: all .5s cubic-bezier(.23, .68, .54, .92);
+        visibility: hidden;
+        opacity: 0;
+    }
+}
