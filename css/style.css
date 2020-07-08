@@ -848,8 +848,10 @@ footer {
 
 .details {
   width: 100%;
-  background-color: #F7F7F7;
-  overflow: scroll; }
+  background-color: #F7F7F7; }
+  @media only screen and (max-width: 34.375em) {
+    .details {
+      overflow: scroll; } }
   .details__slider {
     display: flex;
     justify-content: center; }
