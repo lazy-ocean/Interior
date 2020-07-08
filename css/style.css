@@ -188,7 +188,15 @@ body {
       margin: 7rem auto 7rem auto; } }
 
 .burger {
-  position: relative; }
+  top: 1rem;
+  position: absolute; }
+  .burger__icon {
+    display: block;
+    height: 3rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+    width: 4rem; }
   .burger__menu {
     display: none; }
     @media only screen and (max-width: 53.125em) {

@@ -1,5 +1,16 @@
 .burger {
-    position: relative;
+    //position: relative;
+    top: 1rem;
+    position: absolute;
+
+    &__icon {
+        display: block;
+        height: 3rem;
+        position: relative;
+        cursor: pointer;
+        z-index: 1000;
+        width: 4rem;
+    }
 
     &__menu {
         display: none;
@@ -161,6 +172,7 @@
 
 
 .burger.closed {
+
     &::before {
         top: 0;
         transform: rotate(135deg);
