@@ -1,48 +1,45 @@
 .heading-main {
-    font-size: 6.2rem;
-    font-family: Montserrat Thin, sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  font-weight: 100;
 
-    @media only screen and (max-width: $bp-small) {
-        font-size: 5rem;
-    }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 5rem;
+  }
 
-    &--products {
-        text-transform: none;
-    }
+  &--products {
+    text-transform: none;
+  }
 }
 
-
-
 .heading-categories {
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    line-height: 4.8rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 4.8rem;
 
-    &--green {
-        color: $color-green;
-    }
+  &--green {
+    color: $color-green;
+  }
 
-    &--blue {
-        color: $color-blue;
-    }
+  &--blue {
+    color: $color-blue;
+  }
 
-    &--red {
-        color: $color-red;
-    }
+  &--red {
+    color: $color-red;
+  }
 
-    &--grey {
-        color: $color-grey-dark;
-    }
+  &--grey {
+    color: $color-grey-dark;
+  }
 }
 
 .heading-tertiary {
-    font-size: 3.6rem;
+  font-size: 3.6rem;
 }
 
 .heading-secondary {
-    font-size: 2.2rem;
-    color: $color-primary;
-    text-transform: uppercase;
+  font-size: 2.2rem;
+  color: $color-primary;
+  text-transform: uppercase;
 }
